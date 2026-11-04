@@ -1,0 +1,74 @@
+.admin-project-editor {
+  max-width: 48rem;
+}
+
+.admin-project-editor__header {
+  margin-bottom: 1.5rem;
+}
+
+.admin-project-editor__eyebrow {
+  margin-bottom: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.admin-project-editor__back {
+  color: var(--color-gold);
+}
+
+.admin-project-editor__back:hover,
+.admin-project-editor__back:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.admin-project-editor__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.admin-project-editor__lede {
+  margin-top: 0.55rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.admin-project-editor__status {
+  color: var(--color-text-muted);
+}
+
+.admin-project-editor__alert,
+.admin-project-editor__success {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.admin-project-editor__alert {
+  border: 1px solid rgba(212, 120, 90, 0.45);
+  background: rgba(80, 30, 20, 0.22);
+  color: #f0c4b4;
+}
+
+.admin-project-editor__success {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--color-text);
+}
+
+.admin-project-editor__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

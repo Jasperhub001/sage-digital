@@ -1,0 +1,289 @@
+.admin-projects {
+  max-width: 72rem;
+}
+
+.admin-projects__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-projects__eyebrow {
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.admin-projects__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.admin-projects__lede {
+  max-width: 40rem;
+  margin-top: 0.55rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.admin-projects__add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.15rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.admin-projects__add:hover {
+  background: var(--color-gold-soft);
+}
+
+.admin-projects__add:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.admin-projects__feedback {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.admin-projects__feedback--success {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--color-text);
+}
+
+.admin-projects__feedback--error {
+  border: 1px solid rgba(212, 120, 90, 0.45);
+  background: rgba(80, 30, 20, 0.22);
+  color: #f0c4b4;
+}
+
+.admin-projects__status {
+  color: var(--color-text-muted);
+}
+
+.admin-projects__alert {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 36rem;
+  padding: 1rem;
+  border: 1px solid rgba(212, 120, 90, 0.45);
+  border-radius: var(--radius-sm);
+  background: rgba(80, 30, 20, 0.22);
+  color: #f0c4b4;
+}
+
+.admin-projects__retry,
+.admin-projects__action,
+.admin-projects__icon-btn {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-projects__retry {
+  justify-self: start;
+  padding: 0.65rem 0.9rem;
+  color: #f0c4b4;
+}
+
+.admin-projects__empty {
+  max-width: 32rem;
+  padding: 1.5rem 0;
+}
+
+.admin-projects__empty-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.admin-projects__empty-copy {
+  margin: 0.65rem 0 1.15rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.admin-projects__table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-elevated);
+}
+
+.admin-projects__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 52rem;
+}
+
+.admin-projects__table th,
+.admin-projects__table td {
+  padding: 0.95rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.admin-projects__table th {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.admin-projects__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.admin-projects__name {
+  font-weight: 500;
+}
+
+.admin-projects__slug {
+  margin-top: 0.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.admin-projects__pill {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-projects__pill--published {
+  border-color: rgba(212, 175, 55, 0.4);
+  color: var(--color-gold);
+}
+
+.admin-projects__pill--draft {
+  color: var(--color-text-muted);
+}
+
+.admin-projects__order {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.admin-projects__order-actions {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.admin-projects__icon-btn {
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+.admin-projects__icon-btn:disabled,
+.admin-projects__action:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.admin-projects__icon-btn:hover:not(:disabled),
+.admin-projects__action:hover:not(:disabled),
+.admin-projects__retry:hover {
+  color: var(--color-gold);
+  border-color: var(--color-border-strong);
+}
+
+.admin-projects__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.admin-projects__action {
+  padding: 0.45rem 0.65rem;
+  text-decoration: none;
+}
+
+.admin-projects__action--danger:hover:not(:disabled) {
+  color: #f0c4b4;
+  border-color: rgba(212, 120, 90, 0.55);
+}
+
+.admin-projects__action:focus-visible,
+.admin-projects__icon-btn:focus-visible,
+.admin-projects__retry:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 820px) {
+  .admin-projects__table {
+    min-width: 0;
+  }
+
+  .admin-projects__table thead {
+    display: none;
+  }
+
+  .admin-projects__table,
+  .admin-projects__table tbody,
+  .admin-projects__table tr,
+  .admin-projects__table td {
+    display: block;
+    width: 100%;
+  }
+
+  .admin-projects__table tr {
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .admin-projects__table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .admin-projects__table td {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    gap: 0.65rem;
+    padding: 0.45rem 0;
+    border-bottom: 0;
+  }
+
+  .admin-projects__table td::before {
+    content: attr(data-label);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+}

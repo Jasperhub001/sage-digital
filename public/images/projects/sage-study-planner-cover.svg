@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Placeholder cover for SAGE Study Planner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0c0c"/>
+      <stop offset="100%" stop-color="#15120c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1104" height="654" fill="none" stroke="#D4AF37" stroke-opacity="0.35"/>
+  <text x="80" y="120" fill="#D4AF37" font-family="Georgia, serif" font-size="22" letter-spacing="6">PLACEHOLDER IMAGERY</text>
+  <text x="80" y="380" fill="#F5F0E8" font-family="Georgia, serif" font-size="54">SÅGÊ Study Planner</text>
+  <text x="80" y="450" fill="#A39E94" font-family="Arial, sans-serif" font-size="24">Cover image placeholder — real screenshots coming soon</text>
+</svg>

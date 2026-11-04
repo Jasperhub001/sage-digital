@@ -1,0 +1,7 @@
+# Minimal Supabase CLI config for local functions / deploy.
+# Project ref is set via `supabase link` — do not put secrets here.
+
+[functions.submit-inquiry]
+# Browser contact form uses the anon/publishable key via supabase-js invoke.
+# Authorization still required by the gateway when verify_jwt is true.
+verify_jwt = true

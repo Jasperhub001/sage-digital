@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Placeholder gallery image 2">
+  <rect width="1200" height="750" fill="#0d0d0d"/>
+  <rect x="48" y="48" width="1104" height="654" fill="none" stroke="#D4AF37" stroke-opacity="0.25"/>
+  <text x="80" y="120" fill="#D4AF37" font-family="Georgia, serif" font-size="20" letter-spacing="6">PLACEHOLDER IMAGERY</text>
+  <text x="80" y="390" fill="#F5F0E8" font-family="Georgia, serif" font-size="40">Subject planning</text>
+  <text x="80" y="450" fill="#A39E94" font-family="Arial, sans-serif" font-size="22">Screenshot placeholder</text>
+</svg>

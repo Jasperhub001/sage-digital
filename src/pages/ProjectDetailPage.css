@@ -1,0 +1,198 @@
+.project-detail {
+  padding:
+    calc(var(--nav-height) + var(--space-xl))
+    clamp(1.25rem, 5vw, 4rem)
+    var(--space-3xl);
+  min-height: 100svh;
+  animation: detail-fade var(--duration-slow) var(--ease-out) both;
+}
+
+.project-detail--state {
+  display: grid;
+  place-content: center;
+  gap: var(--space-md);
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.project-detail__inner {
+  width: min(100%, 56rem);
+  margin-inline: auto;
+}
+
+.project-detail__back {
+  display: inline-flex;
+  margin-bottom: var(--space-lg);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.project-detail__back:hover,
+.project-detail__back:focus-visible {
+  color: var(--color-gold);
+}
+
+.project-detail__header {
+  margin-bottom: var(--space-xl);
+}
+
+.project-detail__category {
+  margin-bottom: var(--space-sm);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.project-detail__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.project-detail__description {
+  max-width: 42rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.project-detail__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: var(--space-lg);
+}
+
+.project-detail__tech li {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-border);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.project-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-detail__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.85rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.project-detail__cta--primary {
+  background: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  color: var(--color-bg);
+}
+
+.project-detail__cta--primary:hover,
+.project-detail__cta--primary:focus-visible {
+  background: var(--color-gold-soft);
+  transform: translateY(-1px);
+}
+
+.project-detail__cta--ghost {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.project-detail__cta--ghost:hover,
+.project-detail__cta--ghost:focus-visible {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+.project-detail__cover,
+.project-detail__gallery-item {
+  margin: 0;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  overflow: hidden;
+}
+
+.project-detail__cover img,
+.project-detail__gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-detail__cover {
+  margin-bottom: var(--space-lg);
+}
+
+.project-detail__gallery {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.project-detail__caption {
+  padding: 0.65rem 0.85rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.project-detail__actions .project-detail__cta {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .project-detail {
+    padding-inline: 1.25rem;
+  }
+
+  .project-detail__actions {
+    flex-direction: column;
+  }
+
+  .project-detail__cta {
+    width: 100%;
+  }
+
+  .project-detail__tech li {
+    font-size: 0.65rem;
+  }
+}
+
+@keyframes detail-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,29 @@
+.app {
+  min-height: 100svh;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: var(--space-md);
+  z-index: 200;
+  padding: 0.65rem 1rem;
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transform: translateY(-120%);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  transform: translateY(var(--space-sm));
+}
+
+main {
+  display: block;
+}
